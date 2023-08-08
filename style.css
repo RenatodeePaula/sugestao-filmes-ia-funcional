@@ -21,6 +21,7 @@ body {
 button {
     font-family: 'Outfit', sans-serif;
     color: #fff;
+    border: none;
 }
 
 /* ================CARD================== */
@@ -73,16 +74,14 @@ header button {
 
     padding: 8px 16px;
     border-radius: 4px;
-    background: var(--gradientes-gradiente-normal, linear-gradient(90deg, #8323FF 0%, #FF2DAF 100%));
-    border: none;
+    background: var(--gradientes-gradiente-normal, linear-gradient(90deg, #8323FF 0%, #FF2DAF 100%));   
 
     color: var(--cores-branco, #FFF);
     font-size: 16px;   
     font-weight: 400;
-    line-height: 20px;
-
-    
+    line-height: 20px;    
 }
+
 /* ================MOVIES================== */
 .movies {
     display: flex;
@@ -93,6 +92,8 @@ header button {
     display: flex;
     flex-direction: column;
     gap: 8px;
+
+    max-width: 194px;
 }
 
 .title, 
@@ -126,7 +127,41 @@ header button {
     white-space: nowrap;
     font-size: 20px;    
     font-weight: 500;
-    line-height: 100%; /* 20px */
-    
+    line-height: 100%; 
+}
 
+.poster > img {
+    width: 194px;
+    height: 289px;
+    
+}
+
+.duration,
+.year {
+    gap: 4px;
+    color: var(--cores-cinza-light, #8B8D9B);
+    font-family: Outfit;
+    font-size: 12px;
+  
+    font-weight: 400;
+    line-height: 20px; 
+}
+
+.movie button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    gap: 8px;
+    width: 194px;
+    padding: 8px 16px;
+
+    border-radius: 4px;
+    background: var(--cores-cinza, #2B2B37);  
+    
+    color: var(--cores-branco, #FFF);
+    font-family: Outfit;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px; 
 }
