@@ -531,13 +531,13 @@ function minutesToHourMunutesAndSeconds(minutes) {
 
 async function start() {
     // pegar as sugestões de files da api
-    const results  = data.results
+     const results  = data.results
     // pegar randomicamente 3 filmes para sugestão
     const best3 = select3Videos(results).map(async movie =>{
-    // pegar informações extras dos 3 filmes
+        // pegar informações extras dos 3 filmes
         const info = await getMoreInfo(movie)
 
-    // organizar os dados para...
+        // organizar os dados para...
         const props = {
             id: info.id,
             title: info.title,
