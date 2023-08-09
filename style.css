@@ -22,6 +22,7 @@ button {
     font-family: 'Outfit', sans-serif;
     color: #fff;
     border: none;
+    cursor: pointer;
 }
 
 /* ================CARD================== */
