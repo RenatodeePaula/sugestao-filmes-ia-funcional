@@ -462,8 +462,7 @@ async function watch(e) {
 
   } catch (error) {
     console.log(error)
-  }
-  
+  }  
 }
 
 function createMovieLayout({
